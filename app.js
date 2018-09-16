@@ -9,6 +9,7 @@ var flash = require('connect-flash');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var boardRouter = require('./routes/board');
+var portfolioRouter = require('./routes/portfolio');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use(flash()); //req.flash 메서드를 추가함. req.flash(키, 값)으로 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/board', boardRouter);
+app.use('/portfolio', portfolioRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

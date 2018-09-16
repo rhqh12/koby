@@ -1,8 +1,203 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@charset "UTF-8";
+
+/*-----reset ---------*/
+html, body, div, iframe, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body{
+  font-size:12px;
+}
+a {
+  text-decoration: none;
+  color:#111;
+}
+li {
+	list-style-type: none;
+}
+input {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+.no-scroll {
+	overflow: hidden !important;
 }
+/*#0B6873 #136472 #589CA5 #A9DAE7 #3A8C9C*/
+
+
+/*-----commont style-------*/
+.hidden{
+	display:none;
+}
+/* .color-d {
+	background:#011f3f;
+}
+
+.color-n {
+	background:#0a60bd;
+}
+
+.color-l {
+	background:#429ffd;
+	
+}
+
+.color-hl {
+	background:#fef2bf;
+} */
+
+/* http://jxnblk.com/hello-color/?c=fef2bf */
+/* http://paletton.com/#uid=13i0u0ku7w0iFERnUz8w+pJBpki */
+/* .color-d {
+	background:#006161;
+}
+.color-nd {
+	background:#007b7b;
+}
+.color-n {
+	background:#099999;	
+}
+.color-nl {
+	background:#29a3a3;
+}
+.color-l {
+	background:#4DB8B8;
+} */
+/* http://paletton.com/#uid=73x0f0kiwsS4wVGbTFco6mtv-cu */
+.color-dl {
+	background:#052640;
+}
+.color-d {
+	background:#184568;
+}
+.color-nd {
+	background:#2C5C80;
+}
+.color-n {
+	background:#447194;	
+}
+.color-nl {
+	background:#6991AF;
+}
+.color-l {
+	background:#9EBCD3;
+}
+
+.color-hl {
+	background: rgba(52, 120, 173, 0.3);
+}
+.color-wh {
+	background:#fff;
+}
+
+.color-cont {
+	background:#f2f4f7;
+}
+
+.full-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: calc(100%);	
+    padding-bottom:30px;
+    object-fit: contain;	
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.container-box {
+	margin-top:10px;
+	background:#fff;
+	border:solid #ccc;
+	border-width:1px 0px;	
+}
+.container-n {
+	max-width:1100px;
+	margin:0% auto;
+}
+.container-bar {
+	position:relative;
+	display:flex;
+}
+
+.cont-scroll {
+	overflow-y:auto;
+	height: 100%;	
+}
+.photo-m {
+	width:38px;
+	height:38px;
+	background:red;
+	border-radius: 19px;
+}
+.photo-sm {
+	width:30px;
+	height:30px;
+	background:red;
+	border-radius: 15px;	
+}
+.btn-m {
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:#184568;
+	color:#fff;
+	font-size:13px;
+}
+
+/*----reset end----*/
+/*----header ------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 150px;
+  height: 100%;	
+  object-fit: contain;	
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+  #header h1 {
+    margin:20px 0px;
+    text-align:center;
+  }
+    #header h1 a {
+      font-size:1.7em;
+      color:#fff
+    }
+  #header .main-menu {
+    margin-top:20px;
+  }
+  #header .main-menu a {
+    display: block;
+    padding:10px;
+    font-size:1.2em;
+    color:#052640;
+  }
+  #header .main-menu a:hover{
+    color:#fff;
+  }
+#main {
+  margin-left:150px;
+}
+  #main .container {
+    padding:20px;
+    font-size:1.2em;
+  }
